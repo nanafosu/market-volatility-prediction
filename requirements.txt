@@ -1,0 +1,10 @@
+# Data Manipulation and Analysis
+pandas
+numpy
+google-cloud-bigquery
+yfinance
+
+# Data Visualization
+matplotlib
+seaborn
+plotly
