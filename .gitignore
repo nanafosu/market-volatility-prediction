@@ -205,3 +205,45 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Project-specific ignores (GCP / BigQuery / data pipeline) ---
+
+# Credentials & secrets (never commit)
+# e.g., service-account keys, local env files, gcloud auth exports
+credentials/
+secrets/
+*.key
+*.pem
+*service-account*.json
+*sa-key*.json
+google-application-credentials.json
+
+# BigQuery/exports/staged data
+# Keep tiny samples under data_sample/, ignore real dumps
+data/
+data_raw/
+data_interim/
+data_external/
+exports/
+*.csv
+*.parquet
+*.feather
+*.arrow
+*.tsv
+*.jsonl
+!data_sample/
+!data_sample/*.csv
+!data_sample/*.parquet
+
+# Reports that might get huge
+reports/*.html
+reports/*.pdf
+
+# OS / OneDrive / Editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
+*.swp
+*.swo
