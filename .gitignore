@@ -247,3 +247,4 @@ desktop.ini
 *.tmp
 *.swp
 *.swo
+!reports/*.csv
